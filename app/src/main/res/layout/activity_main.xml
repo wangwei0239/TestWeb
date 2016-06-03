@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wangwei.testweb.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="155dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#5000"
+        android:paddingBottom="48dp"
+        android:paddingTop="48dp">
+        <RelativeLayout
+            android:id="@+id/feedbackLy"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="38dp">
+
+
+            <TextView
+                android:id="@+id/feedbackBtn"
+                android:background="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:text="意见反馈" />
+
+            <TextView
+                android:layout_marginLeft="-2dp"
+                android:layout_toEndOf="@+id/title"
+                android:layout_marginTop="-10dp"
+                android:layout_alignTop="@+id/title"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:background="@drawable/point_holder"
+                android:text="2"/>
+        </RelativeLayout>
+        <View
+            android:id="@+id/sp1"
+            android:layout_below="@id/feedbackLy"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <Button
+            android:layout_below="@id/sp1"
+            android:id="@+id/instrBtn"
+            android:text="功能说明"
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+        <View
+            android:id="@+id/sp2"
+            android:layout_below="@id/instrBtn"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <Button
+            android:layout_below="@id/sp2"
+            android:id="@+id/aboutBtn"
+            android:text="关于"
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+        <Button
+            android:layout_marginTop="105dp"
+            android:id="@+id/logoutBtn"
+            android:background="#FFF"
+            android:text="退出登录"
+            android:layout_below="@+id/aboutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+        <Button
+            android:id="@+id/upgradeBtn"
+            android:layout_alignParentBottom="true"
+            android:text="BETA 1.0"
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
